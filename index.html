@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html data-theme="cupcake">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/7714d5e235.js" crossorigin="anonymous"></script>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- daisyui CSS CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <!-- Tailwind CSS CDN Link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            black: "#1E1E1E",
+            red: "#E90024",
+            orange: "#FFA723",
+            gray: "#787878",
+            darkGray: "#4B4B4B",
+            lightGray: "#F4F4F4",
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav class="w-full max-w-7xl mx-auto">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="gray" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a class="text-red">Home</a></li>
+            <li><a>Our Products</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>FAQs</a></li>
+          </ul>
+        </div>
+        <a class="cursor-pointer ml-auto lg:ml-0">
+          <img src="images/logo.png" alt="our website logo" class=" w-20 h-10 sm:w-full sm:h-full">
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-inter text-lg">
+          <li><a class="text-red">Home</a></li>
+          <li><a>Our Products</a></li>
+          <li><a>Contact Us</a></li>
+          <li><a>FAQs</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end font-inter ">
+        <i class="fa-solid fa-magnifying-glass text-gray mr-6"></i>
+        <i class="fa-solid fa-cart-shopping text-gray mr-6"></i>
+        <a class="bg-red text-white rounded-md py-3 px-4 sm:py-4 sm:px-8 ">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header Banner -->
+
+  <header>
+    <div class="w-full max-w-7xl mx-auto px-5">
+      <div class="grid lg:grid-cols-2 font-inter items-center">
+        <div class="lg:w-11/12">
+          <h1 class="text-4xl md:text-6xl font-bold mb-5">
+            Collect Real & <br />Organic
+            <span class="text-red">Instagram</span> Followers
+          </h1>
+          <p class="text-gray mb-7">
+            We're the only service in the world that provides you with likes
+            from real people. Try our free trial and see for yourself.
+          </p>
+          <button class="bg-red text-white py-4 px-10 rounded-md">
+            Get Started
+          </button>
+        </div>
+        <div class="relative flex justify-center lg:justify-end">
+          <div>
+            <div class=" mr-0 md:mr-16">
+              <img src="images/bannder-phn.png" alt="" />
+            </div>
+            <div class="absolute top-40 -right-5 sm:right-20 md:right-36  lg:-right-14">
+              <img src="images/banner-right.png" alt="" />
+            </div>
+            <div class="shadow-2xl bg-white absolute md:bottom-8  lg:bottom-10 left-0 w-fit md:w-6/12 lg:w-8/12">
+              <div class="px-9 py-8">
+                <p class="text-gray mb-5">‘’ I got over 3,500 new followers my first month, and it helped me catapult my
+                  influencer marketing business.’’</p>
+                <div class="flex justify-between">
+                  <div class="flex items-center">
+                    <img src="images/banner-img.png" alt="">
+                    <div class="ml-4">
+                      <p class="font-bold">Kiyan S.</p>
+                      <p class="text-gray">Sheikh Physique</p>
+                    </div>
+                  </div>
+                  <div>
+                    <img src="images/instagram.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="font-inter">
+
+    <!-- Instagram Likes -->
+
+    <section class="w-full max-w-7xl mx-auto px-5 mt-60 md:mt-28">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center text-center gap-20 md:gap-24 bg-lightGray shadow-md px-10 py-28">
+        <div class="mt-14 md:mt-0">
+          <p class="text-black text-5xl font-bold">Instagram Likes</p>
+        </div>
+        <div>
+          <h2 class="text-black text-5xl font-bold mb-2">13.68M</h2>
+          <p class="text-gray">Likes Given</p>
+        </div>
+        <div>
+          <h2 class="text-black text-5xl font-bold mb-2">12.74K</h2>
+          <p class="text-gray">Happy Clients</p>
+        </div>
+        <div>
+          <h2 class="text-black text-5xl font-bold mb-2">3.56K</h2>
+          <p class="text-gray">Became Famous</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pump Insta Work section  -->
+    <section class="w-full max-w-7xl mx-auto px-5 mt-28">
+       <h1 class="text-black text-5xl font-semibold text-center mb-5">How Pump Insta Work</h1>
+       <p class="text-gray text-center">However, if they see other members in their social network actively participating, <br> it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! <br> Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+
+       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+          <div class="text-center shadow-lg px-14 py-20">
+            <i class="fa-solid fa-boxes-packing text-red text-6xl mb-10"></i>
+            <h3 class="text-2xl font-semibold mb-6 text-black">Pick a package</h3>
+            <p class="text-gray text-justify">Choose the Instagram likes, followers, or views package that you're interested in. Feel free to get in touch if you have an inquiry about a bulk order.</p>
+          </div>
+          <div class="text-center shadow-lg px-14 py-20">
+            <i class="fa-solid fa-file-pen text-red text-6xl mb-10"></i>
+            <h3 class="text-2xl font-semibold mb-6 text-black">Enter Details</h3>
+            <p class="text-gray text-justify">We will never ask you for sensitive details such as your password. All you have to do is provide us with your Instagram username and leave the rest to us!</p>
+          </div>
+          <div class="text-center shadow-lg px-14 py-20">
+            <i class="fa-solid fa-arrow-up-right-dots text-red text-6xl mb-10"></i>
+            <h3 class="text-2xl font-semibold mb-6 text-black">See the growth</h3>
+            <p class="text-gray text-justify">All orders start within a few minutes, so you'll see growth in your Instagram account very quickly. We've made the process super easy.</p>
+          </div>
+       </div>
+    </section>
+
+    <!-- Instra Video section -->
+    <section class="w-full max-w-7xl mx-auto px-5 mt-28">
+      <div >
+        <video src="media/video_ instagram.mp4" poster="media/video-poster.png" controls></video>
+      </div>
+    </section>
+
+    <!--  Why choose Pump Insta section -->
+
+    <section class="w-full max-w-7xl mx-auto px-5 mt-28">
+      <h1 class="text-black text-5xl font-semibold text-center mb-5">Why choose Pump Insta</h1>
+       <p class="text-gray text-center">However, if they see other members in their social network actively participating, <br> it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! <br> Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+
+       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+        <div class="text-center shadow-lg px-14 py-20">
+          <i class="fa-regular fa-user text-red text-6xl mb-10"></i>
+          <h3 class="text-2xl font-semibold mb-6 text-black">High Quality Profiles</h3>
+          <p class="text-gray text-justify">When purchasing followers, likes, or views for your Instagram profile, you need those accounts to be of the highest quality. Pump Insta is famed for quality service and that’s why all our services are fulfilled with genuine users and high-quality profiles, so you know your Insta reputation is in good hands</p>
+        </div>
+        <div class="text-center shadow-lg px-14 py-20">
+          <i class="fa-solid fa-truck text-red text-6xl mb-10"></i>
+          <h3 class="text-2xl font-semibold mb-6 text-black">Instant Delivery</h3>
+          <p class="text-gray text-justify">We know that time is money. So when you purchase from iDigic, you can expect delivery of your Instagram followers, likes, or views to begin within 30 seconds after payment. Having an issue? Our dedicated support team is available for you 24/7 over email and chat.</p>
+        </div>
+        <div class="text-center shadow-lg px-14 py-20">
+          <i class="fa-solid fa-headset text-red text-6xl mb-10"></i>
+          <h3 class="text-2xl font-semibold mb-6 text-black">24/7 Customer Support</h3>
+          <p class="text-gray text-justify">If you have any issues or doubts with our service, you can contact us at any time of the day. We work 24*7 in order to deliver the best possible service to you. Feel free to hit us up!</p>
+        </div>
+     </div>
+    </section>
+
+    <!-- Pump Insta Work -->
+
+    <section class="w-full max-w-7xl mx-auto px-5 mt-28">
+      <h1 class="text-black text-5xl font-semibold text-center mb-5">How Pump Insta Work</h1>
+       <p class="text-gray text-center">However, if they see other members in their social network actively participating, <br> it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! <br> Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+
+       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+        <div class="shadow-lg px-14 py-20 font-inter text-center">
+          <button class="text-red mb-12 bg-[#FDE5E9] py-3 px-16 rounded-md font-bold">Save $2</button>
+          <h3 class="text-2xl font-semibold mb-6 text-black">Instagram Followers</h3>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Likes From Real Users</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Instant Start (No delay)</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Control Delivery Speed</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-10"></i>No Password Required</p>
+          <h1 class="text-black text-5xl font-semibold mb-12">$9.95</h1>
+          <button class="border border-red text-red hover:bg-red hover:text-white transition-all py-4 px-10 rounded-md">Purchase</button>
+        </div>
+        <div class="shadow-lg px-14 py-20 font-inter text-center">
+          <button class="text-red mb-12 bg-[#FDE5E9] py-3 px-16 rounded-md font-bold">Save $2</button>
+          <h3 class="text-2xl font-semibold mb-6 text-black">Instagram Followers</h3>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Likes From Real Users</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Instant Start (No delay)</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Control Delivery Speed</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-10"></i>No Password Required</p>
+          <h1 class="text-red text-5xl font-semibold mb-12">$9.95</h1>
+          <button class="bg-red text-white hover:border hover:border-red hover:bg-inherit hover:text-red transition-all py-4 px-10 rounded-md">Purchase</button>
+        </div>
+        <div class="shadow-lg px-14 py-20 font-inter text-center">
+          <button class="text-red mb-12 bg-[#FDE5E9] py-3 px-16 rounded-md font-bold">Save $2</button>
+          <h3 class="text-2xl font-semibold mb-6 text-black">Instagram Comments</h3>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Likes From Real Users</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Instant Start (No delay)</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-4"></i>Control Delivery Speed</p>
+          <p class="text-gray"><i class="fa-solid fa-check text-[#5EBD78] mr-4 mb-10"></i>No Password Required</p>
+          <h1 class="text-black text-5xl font-semibold mb-12">$9.90</h1>
+          <button class="border border-red hover:bg-red hover:text-white transition-all text-red py-4 px-10 rounded-md">Purchase</button>
+        </div>
+     </div>
+    </section>
+
+    <!-- Our Customer Rating section -->
+
+    <section class="w-full max-w-7xl mx-auto px-5 mt-28">
+      <h1 class="text-black text-5xl font-semibold text-center mb-5">Our Customer Rating</h1>
+       <p class="text-gray text-center">However, if they see other members in their social network actively participating, <br> it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! <br> Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+
+       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-28">
+         <div class="px-10 pt-10 pb-7 shadow-md rounded-3xl">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <img src="images/client-1.png" alt="">
+                <p class="text-darkGray ml-5">Lynn Patterson</p>
+              </div>
+              <i class="fa-solid fa-ellipsis text-darkGray text-3xl"></i>
+            </div>
+            <div class="bg-lightGray mt-5 py-9 px-12 rounded-lg mb-6">
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <p class="text-darkGray mt-5">However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+            </div>
+            <div class="flex justify-between">
+              <div>
+                <i class="fa-regular fa-heart text-darkGray mr-5"></i>
+                <i class="fa-regular fa-message text-darkGray mr-5"></i>
+                <i class="fa-regular fa-paper-plane text-darkGray"></i>
+              </div>
+              <i class="fa-regular fa-bookmark text-darkGray"></i>
+            </div>
+         </div>
+         <div class="px-10 pt-10 pb-7 shadow-md rounded-3xl">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <img src="images/client-2.png" alt="">
+                <p class="text-darkGray ml-5">Kiyan S.</p>
+              </div>
+              <i class="fa-solid fa-ellipsis text-darkGray text-3xl"></i>
+            </div>
+            <div class="bg-lightGray mt-5 py-9 px-12 rounded-lg mb-6">
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <p class="text-darkGray mt-5">However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+            </div>
+            <div class="flex justify-between">
+              <div>
+                <i class="fa-regular fa-heart text-darkGray mr-5"></i>
+                <i class="fa-regular fa-message text-darkGray mr-5"></i>
+                <i class="fa-regular fa-paper-plane text-darkGray"></i>
+              </div>
+              <i class="fa-regular fa-bookmark text-darkGray"></i>
+            </div>
+         </div>
+         <div class="px-10 pt-10 pb-7 shadow-md rounded-3xl">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <img src="images/client-3.png" alt="">
+                <p class="text-darkGray ml-5">Emmett Bowers</p>
+              </div>
+              <i class="fa-solid fa-ellipsis text-darkGray text-3xl"></i>
+            </div>
+            <div class="bg-lightGray mt-5 py-9 px-12 rounded-lg mb-6">
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <i class="fa-solid fa-star text-orange"></i>
+              <p class="text-darkGray mt-5">However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+            </div>
+            <div class="flex justify-between">
+              <div>
+                <i class="fa-regular fa-heart text-darkGray mr-5"></i>
+                <i class="fa-regular fa-message text-darkGray mr-5"></i>
+                <i class="fa-regular fa-paper-plane text-darkGray"></i>
+              </div>
+              <i class="fa-regular fa-bookmark text-darkGray"></i>
+            </div>
+         </div>
+       </div>
+    </section>
+
+    <!--  -->
+
+    <section class="w-full max-w-7xl mx-auto px-5 mt-28">
+      <h1 class="text-black text-5xl font-semibold text-center mb-5">Our Customer Rating</h1>
+      <p class="text-gray text-center">However, if they see other members in their social network actively participating, <br> it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! <br> Buy Instagram followers, likes and views that are delivered instantly and safely.</p>
+
+    <div class="md:flex font-inter items-center gap-6  mt-16">
+      <div class="">
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box shadow-lg mb-5">
+          <div class="collapse-title text-red text-xl font-semibold">
+            Is There Any Risk To My Account?
+          </div>
+          <div class="collapse-content"> 
+            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box shadow-lg mb-5">
+          <div class="collapse-title text-black text-xl font-semibold">
+            How Are You Different From Other Services?
+          </div>
+          <div class="collapse-content"> 
+            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box shadow-lg">
+          <div class="collapse-title text-xl font-semibold">
+            Do You Follow / Unfollow?
+          </div>
+          <div class="collapse-content"> 
+            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-14 md:mt-0">
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box shadow-lg mb-5">
+          <div class="collapse-title text-red text-xl font-semibold">
+            Is There Any Risk To My Account?
+          </div>
+          <div class="collapse-content"> 
+            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box shadow-lg mb-5">
+          <div class="collapse-title text-black text-xl font-semibold">
+            How Are You Different From Other Services?
+          </div>
+          <div class="collapse-content"> 
+            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box shadow-lg mb-5">
+          <div class="collapse-title text-xl font-semibold">
+            Do You Follow / Unfollow?
+          </div>
+          <div class="collapse-content"> 
+            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box shadow-lg">
+          <div class="collapse-title text-xl font-semibold">
+            Do You Follow / Unfollow?
+          </div>
+          <div class="collapse-content"> 
+            <p>However, if they see other members in their social network actively participating,  it makes investing time into a social media profile both fun and easy. Pump Insta is here to help! it makes investing time into a social media profile both fun and easy. Pump Insta is here to help!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer Area -->
+  <footer class="bg-lightGray py-36 mt-28">
+    <div class="w-full max-w-7xl mx-auto px-5 font-inter">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div>
+          <img src="images/logo.png" alt="footer logo" class="mb-6">
+          <p class="text-darkGray mb-5 md:w-4/5">However, if they see other members in their social network actively participating,  it makes investing time into a social.</p>
+          <div class="flex">
+            <a href="https://www.facebook.com/BeingIffarurRahat/"><img src="images/facebook.png" alt="footer facebook icon" target="_blank" class="mr-3"></a>
+            <a href="https://www.linkedin.com/in/iffarur-rahat-b66483200/"><img src="images/linkedin.png" alt="footer linkedin icon"></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-xl font-semibold text-black">Our Policy</h5>
+          <div class="mt-10">
+            <a href="#" class="mb-4 text-darkGray">Privacy Policy</a><br>
+            <a href="#" class="mb-4 text-darkGray">Terms of Service</a><br>
+            <a href="#" class="mb-4 text-darkGray">Refund Policy</a><br>
+            <a href="#" class="mb-4 text-darkGray">Search</a><br>
+            <a href="#" class="mb-4 text-darkGray">Money Back Guarantee</a><br>
+            <a href="#" class="mb-4 text-darkGray">Terms and Conditions</a><br>
+            <a href="#" class="text-darkGray">Refund Policy</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="text-xl font-semibold text-black">Our Policy</h5>
+          <p class="text-darkGray mt-10 mb-5">However, if they see other members in their social network actively.</p>
+          <div class="flex">
+            <input type="email" placeholder="Enter your email" class="py-4 pl-5 bg-white">
+            <button class="bg-red text-white py-3 px-5 rounded-r-md font-bold">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
